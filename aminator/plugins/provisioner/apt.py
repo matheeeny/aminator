@@ -116,7 +116,7 @@ def apt_get_update():
 
 @command()
 def apt_get_install(package):
-    return 'apt-get -y install {0}'.format(package)
+    return 'apt-get -y --force-yes install {0}'.format(package)
 
 
 @keyval_parse()
